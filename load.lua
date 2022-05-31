@@ -1,10 +1,3 @@
-local userKey = "https://pastebin.com/mC3sLRSA" 
-local key = game:HttpGet(userKey, true)
-
-plr = game.Players.LocalPlayer
-if string.find(key,_G.Key) then
- 
-print("Whitelisted")
 
 local Config = {
     WindowName = "LOLV",
@@ -554,6 +547,3 @@ end)
 local Button1 = Section5:CreateButton("Spawn", function()	    
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-393, 188, -51)
 end)
-else
-plr:kick("Not whitelisted")
-end
